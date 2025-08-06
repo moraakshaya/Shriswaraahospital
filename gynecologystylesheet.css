@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #888;
+}
+
+
+/**------ABOUT US BANNER------**/
+.banner-image {
+    height: 300px !important;
+    /* adjust as needed */
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* dim effect */
+    z-index: 1;
+}
+
+.banner-text {
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.banner-text>p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #b1a7a6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text>p>span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gynecology-intro-section {
+    background-color: #f7f7f7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.gynecology-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+}
+
+.gynecology-description {
+    /* max-width: 800px; */
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .gynecology-title {
+        font-size: 2rem;
+    }
+
+    .gynecology-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gynecology-title {
+        font-size: 1.5rem;
+    }
+
+    .gynecology-description {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.why-choose-us-section {
+    background-color: #f9f9f9;
+}
+
+.why-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+}
+
+.why-paragraph {
+    /* max-width: 850px; */
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: "Nunito", sans-serif;
+}
+
+.why-paragraph strong {
+    color: #333;
+    /* Your brand color */
+    font-weight: 600;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .why-title {
+        font-size: 1.6rem;
+    }
+
+    .why-paragraph {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .why-title {
+        font-size: 1.4rem;
+    }
+
+    .why-paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+}
+
+.doctor-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    /* border: 3px solid #f9c84b; */
+}
+
+.doctor-name {
+    color: #4e0714;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: "Crimson Text", serif;
+
+}
+
+.doctor-studies {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+    max-width: 100%;
+     font-family: "Nunito", sans-serif;
+}
+
+/* .book-btn {
+  position: relative;
+  overflow: hidden;
+  color: #4e0714;
+  background-color: transparent;
+  border: 2px solid #4e0714;
+  padding: 0px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  z-index: 1;
+  transition: color 0.3s ease;
+} */
+
+.doctor-info a {
+    text-decoration: none;
+}
+
+.book-btn-app {
+    height: 30px;
+    width: 160px;
+    border: 1px solid rgba(255, 0, 84,0.8);
+    color: rgba(255, 0, 84,0.8);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-size: 15px;
+     font-family: "Nunito", sans-serif;
+}
+
+.book-btn-app::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 84,0.8);
+    z-index: -1;
+    transition: left 0.4s ease;
+}
+
+.book-btn-app:hover::before {
+    left: 0;
+}
+
+.book-btn-app:hover {
+    color:  #fff!important;
+    border-color: transparent;
+    border: 1px solid rgba(255, 0, 84,0.8);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .doctor-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .doctor-name {
+        font-size: 1rem;
+    }
+
+    .doctor-studies {
+        font-size: 0.85rem;
+    }
+
+    .book-btn-app {
+        font-size: 0.9rem;
+        padding: 5px 12px;
+    }
+}
+
+
+
+
+
+
+.service-card {
+    background: white;
+    /* padding: 20px; */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    /* text-align: center; */
+    height: 100%;
+    border: 1px solid #4e0714;
+}
+
+
+  .service-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+    height: 100%; /* Optional for height consistency */
+  }
+
+  .our-service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+}
+
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: "Nunito", sans-serif;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: "Nunito", sans-serif;
+}
+
+  .swiper-container {
+    padding-bottom: 50px; /* Reserve space below for dots */
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #4e0714;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #4e0714;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .appointment-container {
+      position: relative;
+      background: url('./images/bookingappoinmnet.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 20px;
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+      gap: 50px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .appointment-content {
+      position: relative;
+      z-index: 2;
+      width: 42%;
+      min-width: 300px;
+      transition: all 1s ease;
+      opacity: 0;
+      /* border: 1px solid white; */
+    }
+
+    .appointment-form {
+      position: relative;
+      z-index: 2;
+      width: 30%;
+      min-width: 300px;
+      transition: all 1s ease;
+      opacity: 0;
+      /* border: 1px solid red; */
+    }
+
+    .appointment-form.slide-in {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .appointment-content.fade-in {
+      opacity: 1;
+    }
+
+    .appointment-form {
+      background: #fff;
+      color: #000;
+      padding: 30px;
+      border-radius: 10px;
+      transform: translateX(100%);
+      margin: 0 100px 0 0;
+    }
+
+    .appointment-form h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color:  rgba(255, 0, 84,0.8);
+      font-family: "Crimson Text", serif;
+      font-weight: 700;
+    }
+
+    .appointment-form input,
+    .appointment-form button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .appointment-form button {
+      background: rgba(255, 0, 84,0.8);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-family: "Crimson Text", serif;
+      font-size: 18px;
+    }
+
+    .appointment-form button:hover {
+      background: transparent;
+      box-shadow: 1px 1px 8px rgba(255, 0, 84,0.8) inset;
+      color: rgba(255, 0, 84,0.8);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .appointment-content {
+      margin: 0 0 0 150px;
+      /* border: 1px solid white; */
+    }
+
+    .appointment-content h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color:  #fff;
+      font-family: "Crimson Text", serif;
+      font-weight: 700;
+    }
+
+    .appointment-content p {
+      font-size: 18px;
+      max-width: 500px;
+      color: #ccc;
+      font-family: "Nunito", sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .appointment-container {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 10px;
+      }
+
+      .appointment-form,
+      .appointment-content {
+        width: 100%;
+        margin: 0;
+      }
+
+      .appointment-content {
+        margin-bottom: 0px;
+        text-align: center;
+      }
+
+      .appointment-form h3 {
+        font-size: 20px;
+      }
+
+      .appointment-content h2 {
+        font-size: 24px;
+      }
+
+      .appointment-content p {
+        font-size: 16px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .faq-section {
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .faq-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+      
+    }
+
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 24px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      background: #f5f5f5;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .faq-answer {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      background: #fff;
+      font-size: 16px;
+      color: #444;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding: 16px 24px;
+    }
+
+    .faq-icon {
+      font-size: 24px;
+      transition: transform 0.3s ease;
+      color: rgba(255, 0, 84,0.8);
+      font-weight: bold;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    @media (max-width: 600px) {
+      .faq-question {
+        font-size: 16px;
+      }
+
+      .faq-answer {
+        font-size: 15px;
+      }
+
+      .faq-title {
+        font-size: 26px;
+      }
+    }

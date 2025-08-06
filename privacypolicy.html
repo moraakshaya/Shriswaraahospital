@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Swaraa MultiSpeciality Hospital</title>
+
+    <!--CSS STYLESHEET LINK-->
+    <link rel="stylesheet" href="./homestyle.css">
+
+    <!--BOOTSTRAP CDN LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!--FONT AWESOME CDN LINK-->
+    <script src="https://kit.fontawesome.com/a35dc4b781.js" crossorigin="anonymous"></script>
+
+    <!--GOOGLE FONT LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dosis:wght@200..800&family=Edu+SA+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=M+PLUS+Rounded+1c&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto+Slab:wght@100..900&family=Signika:wght@300..700&family=Varela+Round&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .privacy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 13% 0px;
+            /* background-color: #fff; */
+        }
+
+        .privacy-container h1 {
+            font-size: 36px;
+            font-weight: 700;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            /* color: #007BFF; */
+            text-align: center;
+            font-family: "Crimson Text", serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            color: rgba(255, 0, 84, 0.8);
+        }
+
+        .privacy-container h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            /* color: #222; */
+            font-family: "Crimson Text", serif;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            color: rgba(255, 0, 84, 0.8);
+        }
+
+        .privacy-container p,
+        .privacy-container li {
+            font-size: 17px;
+            margin-bottom: 15px;
+            font-family: "Nunito", sans-serif;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Responsive Font Sizes */
+        @media (max-width: 992px) {
+
+            .privacy-container {
+                padding: 150px 15px;
+            }
+
+            .privacy-container h1 {
+                font-size: 30px;
+                padding-bottom: 0;
+            }
+
+            .privacy-container h2 {
+                font-size: 20px;
+            }
+
+            .privacy-container p,
+            .privacy-container li {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .privacy-container {
+                padding: 80px 15px;
+            }
+
+            .privacy-container h1 {
+                font-size: 26px;
+                padding-bottom: 0px;
+            }
+
+            .privacy-container h2 {
+                font-size: 18px;
+            }
+
+            .privacy-container p,
+            .privacy-container li {
+                font-size: 14px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!------NAVBAR SECTION------>
+    <nav class="navlist">
+        <div class="top-box">
+            <div class="logo-left-box">
+                <img src="./images/hospitallogo.png" alt="">
+            </div>
+
+            <div class="top-right-box">
+                <div class="book-btn">
+                    <a href="./bookingAppoinment">
+                        <button type="submit">Booking Appoinment</button>
+                    </a>
+                </div>
+
+                <!-- Menu icon for mobile -->
+                <div class="menu_bar" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <a href="tel:+919948167897" class="call_container">
+                    <div class="call_icon"><i class="fa-solid fa-phone"></i></div>
+                    <p>+91 9948167897</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom-box" id="bottomNav">
+            <ul>
+                <li><a href="./index">Home</a></li>
+                <li><a href="./aboutus">About Us</a></li>
+                <li><a href="./doctors">Doctors</a></li>
+                <li class="departments-dropdown">
+                    <a href="#">Departments<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="cardiology">Cardiology</a></li>
+                            <li><a href="gynecology">Gynecology</a></li>
+                            <li><a href="generalsurgery">General Surgery</a></li>
+                            <li><a href="generalmedicine">General Medicine</a></li>
+                            <li><a href="diabetology">Diabetology</a></li>
+                            <li><a href="neurology">Neurology</a></li>
+                            <li><a href="plasticsurgery">Plastic Surgery</a></li>
+                            <li><a href="pulmonology">Pulmonology</a></li>
+                            <li><a href="gastroenterology">Gastroenterology</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="./blogs">Blogs</a></li>
+                <li><a href="./contactus">Contact Us</a></li>
+                <li><a href="./gallery">Gallery</a></li>
+            </ul>
+
+            <div class="book-btn-mobile">
+                <a href="./bookingAppoinment">
+                    <button type="submit">Booking Appoinment</button>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+    <div class="privacy-container">
+        <h1>Privacy Policy</h1>
+
+        <p>At <strong>Shri Swaraa Multispeciality Hospital</strong>, we are committed to protecting and respecting your
+            privacy. This Privacy Policy outlines the type of information we collect from you, how we use it, and how we
+            protect it, ensuring we meet all healthcare data protection and patient privacy standards.</p>
+
+        <h2>How We Use Your Information</h2>
+        <ul>
+            <li>Provide healthcare services</li>
+            <li>Send appointment reminders and health-related communications</li>
+            <li>Process billing and insurance claims</li>
+            <li>Improve our healthcare services</li>
+        </ul>
+
+        <h2>Sharing Your Information</h2>
+        <p>We may share your personal information with healthcare providers, insurance companies, or third-party
+            partners to provide you with the best healthcare services. However, we do not sell or rent your personal
+            information. Your data protection rights are paramount to us.</p>
+
+        <h2>Cookies</h2>
+        <p>Our website uses cookies to enhance user experience, analyze traffic, and provide a personalized service. By
+            continuing to browse the site, you consent to the use of cookies. For more details, please read our cookie
+            policy.</p>
+
+        <h2>Third-Party Links</h2>
+        <p>Our website may contain links to third-party websites. We are not responsible for the content or privacy
+            practices of these external sites.</p>
+
+        <h2>Your Rights</h2>
+        <ul>
+            <li>Access your personal information</li>
+            <li>Correct or update your details</li>
+            <li>Request deletion of your data (where applicable)</li>
+            <li>Opt-out of marketing communications</li>
+        </ul>
+        <p>We respect your rights related to personal data privacy and will respond promptly to any requests.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns regarding our privacy policy, please contact us at:</p>
+        <p><strong>Phone:</strong> 9948167897, 8801503333</p>
+        <p><strong>Email:</strong> info@shriswaraamultispecialityhospital.com</p>
+        <p><strong>Address:</strong> Shree Swaraa MultiSpeciality Hospital Maruti Nagar 3rd Cross, Maruthi Nagar-515002
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------FOOTER SECTION------>
+
+    <footer>
+        <div class="footer_container">
+            <div class="container_one">
+                <div class="footer_logo">
+                    <img src="./images/hospitallogo.png" alt="">
+                    <p>Shree Swaraa MultiSpeciality Hospital Maruti Nagar 3rd Cross, Maruthi Nagar-515002</p>
+                </div>
+
+                <div class="social_icons">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/ShriSwaraaHospital"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.instagram.com/shriswaraahospital/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://x.com/ShriSwaraa"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.youtube.com/@ShriSwaraaHospital"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_two">
+                <p>Quick Links</p>
+
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="aboutus">About Us</a></li>
+                    <li><a href="doctors">Doctors</a></li>
+                    <li><a href="blogs">Blogs</a></li>
+                    <li><a href="contactus">Contact Us</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="privacypolicy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+
+            <div class="container_three">
+                <p>Departments</p>
+
+                <ul>
+                    <li><a href="cardiology">Cardiology</a></li>
+                    <li><a href="gynecology">Gynecology</a></li>
+                    <li><a href="generalsurgery">General Surgery</a></li>
+                    <li><a href="generalmedicine">General Medicine</a></li>
+                    <li><a href="diabetology">Diabetology</a></li>
+                    <li><a href="neurology">Neurology</a></li>
+                    <li><a href="plasticsurgery">Plastic Surgery</a></li>
+                    <li><a href="pulmonology">Pulmonology</a></li>
+                    <li><a href="gastroenterology">Gastroenterology</a></li>
+                </ul>
+            </div>
+
+
+            <div class="container_four">
+                <p>Contact Details</p>
+
+                <div class="contact_icon">
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@shriswaraamultispecialityhospital.com</p>
+                    </div>
+
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 8801503333</p>
+                    </div>
+
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>8 AM - 5 PM , Monday - Saturday</p>
+                    </div>
+                </div>
+
+                <div class="make_appoinment">
+                    <!-- <p>Call Us</p> -->
+                    <hr>
+                    <p class="make_appoin_content">At Shri Swaraa Multi Speciality Hospital, your health is our
+                        priority. Reach out to us for appointments, medical inquiries, or any assistance you may need.
+                    </p>
+                    <div class="make_appoin_icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 9948167897</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer_bottomContainer">
+            <p>shriswaraamultispecialityhospital.com</p>
+            <p>Copyright © 2025 All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

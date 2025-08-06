@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #888;
+}
+
+
+/**------ABOUT US BANNER------**/
+.banner-image {
+    height: 300px !important;
+    /* adjust as needed */
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* dim effect */
+    z-index: 1;
+}
+
+.banner-text {
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.banner-text>p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #b1a7a6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text>p>span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+.doctor-intro-section {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.doctor-intro-title {
+    font-size: 40px;
+    font-weight: 700;
+     font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+
+}
+
+.doctor-intro-content {
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+     font-family: "Nunito", sans-serif;
+}
+
+/* ----------- Responsive for Mobile ----------- */
+@media (max-width: 768px) {
+  .doctor-intro-title {
+    font-size: 1.6rem; /* ~25px */
+  }
+
+  .doctor-intro-content {
+    font-size: 0.9rem; /* ~16px */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section background */
+.doctor-grid-section {
+  /* background-color: #ccc; */
+  
+}
+
+/* Card container */
+.doctor-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Image */
+.doctor-image {
+  height: auto;
+  overflow: hidden;
+}
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.doctor-card:hover .doctor-image img {
+  transform: scale(1.1);
+}
+
+/* Content section */
+.doctor-content {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.doctor-content .bg-slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(255, 0, 84,0.8);
+  z-index: -1;
+  transition: height 0.4s ease;
+}
+
+.doctor-card:hover .bg-slide {
+  height: 100%;
+}
+
+/* Text styles */
+.department {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 4px;
+  transition: color 0.3s;
+   font-family: "Nunito", sans-serif;
+}
+.doctor-name {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: 600;
+  transition: color 0.3s;
+   font-family: "Crimson Text", serif;
+   line-height: 1.3;
+
+}
+.doctor-desc {
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  transition: color 0.3s;
+   font-family: "Nunito", sans-serif;
+   color: #333333;
+}
+
+
+/* Button */
+/* .view-btn {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background-color: #f9c84b;
+  color: #4e0714;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+} */
+
+.view-btn {
+    display: inline-flex;           /* Ensures content centers */
+  justify-content: center;
+  align-items: center;
+  width: 150px;                   /* Set width */
+  height: 30px;                   /* Set height */
+  background-color: rgba(255, 0, 84,0.8);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+  font-size: 14px;   
+  border: none;  
+}    
+
+/* Hover text color changes */
+.doctor-card:hover .doctor-name {
+  color: #fff;
+}
+
+.doctor-card:hover .department {
+    font-size: 16px;
+}
+
+.doctor-card:hover .doctor-desc {
+    color: whitesmoke;
+}
+
+.doctor-card:hover .view-btn {
+  background-color: #fff;
+  color: rgba(255, 0, 84,0.8);
+}
+
+.doctor-card:hover {
+    box-shadow: 1px 1px 8px #4e0714;
+    font-weight: 600;
+}

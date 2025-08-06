@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  background-color: #f5f3f4;
+}
+
+
+
+
+
+.banner-image {
+    height: 300px !important;
+    /* adjust as needed */
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* dim effect */
+    z-index: 1;
+}
+
+.banner-text {
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.banner-text > h1 {
+    font-size: 38px;
+  }
+
+@media (max-width:768px) {
+  .banner-text > h1 {
+    font-size: 28px;
+  }
+  .banner-text {
+    z-index: 2;
+    padding: 0 15px;
+    width: 80%;
+}
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.banner-text>p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #f5f3f4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banner-text>p>span {
+    color: rgba(255,0,84);
+    font-weight: 700;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/**------BLOGSPAGE SECTION------**/
+
+.blog_container {
+  max-width: 900px;
+  margin: 100px auto 0;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.blog_header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+   font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+
+}
+
+.blog_meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+}
+
+.blog_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.blog_content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+
+}
+
+.blog_content h3 {
+  font-size: 24px;
+  margin: 30px 0 10px;
+  color: rgba(255, 0, 84,0.8);
+  font-family: "Crimson Text", serif;
+}
+
+.blog_content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog_content ul li {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* ---------- Responsive Media Queries ---------- */
+
+@media (max-width: 768px) {
+  .blog_container {
+    margin: 50px auto 100px;
+  }
+  .blog_header h1 {
+    font-size: 28px;
+  }
+
+  .blog_content h3 {
+    font-size: 20px;
+  }
+
+  .blog_content p,
+  .blog_content ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog_header h1 {
+    font-size: 22px;
+  }
+
+  .blog_meta {
+    font-size: 13px;
+  }
+
+  .blog_content h3 {
+    font-size: 18px;
+  }
+
+  .blog_content p,
+  .blog_content ul li {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= Background & Layout ======= */
+.newsletter_section {
+  background: url('./images/aboutusbanner.png') center/cover no-repeat;
+  position: relative;
+  padding: 0px 0px;
+  color: #fff;
+}
+
+.newsletter_overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* dim effect */
+  padding: 60px 30px;
+}
+
+.newsletter_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+}
+
+/* ======= Left: Newsletter Form ======= */
+.newsletter_formBox {
+  flex: 1 1 450px;
+  animation: slideInRight 1s ease forwards;
+  opacity: 0;
+  /* border: 1px solid white; */
+}
+
+.newsletter_formBox h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: "Crimson Text", serif;
+}
+
+.newsletter_formBox p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.newsletter_formBox form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter_formBox input {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.subscribe_btn {
+  background: #fff;
+  color: rgba(255, 0, 84,0.8);
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subscribe_btn:hover {
+  background: rgba(255, 0, 84,0.8);
+  color: #fff;
+}
+
+/* ======= Right: Social Icons ======= */
+.newsletter_social {
+  flex: 1 1 350px;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  /* border: 1px solid white; */
+}
+
+.newsletter_social h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Crimson Text", serif;
+}
+
+.social_share {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social_share .icon {
+  width: 44px;
+  height: 44px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social_share .icon:hover {
+  background-color: white;
+  color: rgba(255, 0, 84,0.8);
+  transform: scale(1.2);
+}
+
+/* ======= Animations ======= */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(280px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  .newsletter_wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .newsletter_formBox {
+    flex: 1 1 200px;
+  }
+
+  .newsletter_formBox form {
+    flex-direction: column;
+  }
+
+  .newsletter_formBox input {
+    width: 100%;
+  }
+
+  .subscribe_btn {
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .newsletter_social {
+    flex: 1 1 10px;
+  }
+
+  .social_share {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter_formBox h2 {
+    font-size: 24px;
+  }
+
+  .newsletter_social h4 {
+    font-size: 20px;
+  }
+
+  .social_share .icon {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+}

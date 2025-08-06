@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #f5f3f4;
+}
+
+
+/**------ABOUT US BANNER------**/
+.banner-image {
+    height: 300px !important;
+    /* adjust as needed */
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* dim effect */
+    z-index: 1;
+}
+
+.banner-text {
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-heading > h6 {
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: "Crimson Text", serif;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+color: rgba(255, 0, 84,0.8);
+
+}
+.contact-heading .lead {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10%;
+    line-height: 1.8;
+    color: #444;
+     font-family: "Nunito", sans-serif;
+}
+.contact-container {
+    margin: 5% 0;
+    padding: 4% 0;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(255,0,84, 0.7), rgba(255,0,84,0.9));
+    box-shadow: -2px -2px 18px rgba(198, 191, 191, 0.4);
+}
+.contact-info {
+    background: #ccc;
+    padding: 5% 4%;
+    border-radius: 8px;
+}
+.contact-info i {
+    color: rgba(255, 0, 84,0.8);
+    margin-right: 5px;
+}
+.contact-info > h4 {
+    color: rgba(255, 0, 84,0.8);
+    font-size: 26px;
+     font-family: "Crimson Text", serif;
+}
+.contact-info p {
+    font-size: 15px;
+    font-family: "Nunito", sans-serif;
+}
+.contact-social-icons i:hover {
+    font-weight: bold;
+    font-size: 28px;
+    transform: translateY(3px);
+}
+
+
+
+.form-input {
+    font-family: "Nunito", sans-serif;
+}
+
+.contact-form-info > h4 {
+    color: #eee;
+    font-size: 32px;
+     font-family: "Crimson Text", serif;
+}
+.contact-info-box .contact-submit-btn {
+    background: transparent;
+    height: 30px;
+    width: 140px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-weight: 600;
+    color: #eee;
+    
+}
+.contact-info-box .contact-submit-btn:hover {
+    box-shadow: 1px 1px 8px rgba(255, 0, 84,0.8) inset;
+    background: #fff;
+    color: rgb(255,0,84, 0.7);
+    border: none;
+}
+.map-container {
+    border-radius: 10px;
+    box-shadow: -2px -2px 18px rgba(198, 191, 191, 0.4);
+    font-family: "Nunito", sans-serif;
+}
+

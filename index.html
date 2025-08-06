@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Swaraa MultiSpeciality Hospital</title>
+
+    <!--CSS STYLESHEET LINK-->
+    <link rel="stylesheet" href="./homestyle.css">
+
+    <!--BOOTSTRAP CDN LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!--FONT AWESOME CDN LINK-->
+    <script src="https://kit.fontawesome.com/a35dc4b781.js" crossorigin="anonymous"></script>
+
+    <!--GOOGLE FONT LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dosis:wght@200..800&family=Edu+SA+Hand:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=M+PLUS+Rounded+1c&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto+Slab:wght@100..900&family=Signika:wght@300..700&family=Varela+Round&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!------NAVBAR SECTION------>
+    <nav class="navlist">
+        <div class="top-box">
+            <div class="logo-left-box">
+                <img src="./images/hospitallogo.png" alt="">
+            </div>
+
+            <div class="top-right-box">
+                <div class="book-btn">
+                    <a href="./bookingAppoinment">
+                        <button type="submit">Booking Appoinment</button>
+                    </a>
+                </div>
+
+                <!-- Menu icon for mobile -->
+                <div class="menu_bar" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <a href="tel:+919948167897" class="call_container">
+                    <div class="call_icon"><i class="fa-solid fa-phone"></i></div>
+                    <p>+91 9948167897</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="bottom-box" id="bottomNav">
+            <ul>
+                <li><a href="./index">Home</a></li>
+                <li><a href="./aboutus">About Us</a></li>
+                <li><a href="./doctors">Doctors</a></li>
+                <li class="departments-dropdown">
+                    <a href="#">Departments<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="cardiology">Cardiology</a></li>
+                            <li><a href="gynecology">Gynecology</a></li>
+                            <li><a href="generalsurgery">General Surgery</a></li>
+                            <li><a href="generalmedicine">General Medicine</a></li>
+                            <li><a href="diabetology">Diabetology</a></li>
+                            <li><a href="neurology">Neurology</a></li>
+                            <li><a href="plasticsurgery">Plastic Surgery</a></li>
+                            <li><a href="pulmonology">Pulmonology</a></li>
+                            <li><a href="gastroenterology">Gastroenterology</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="./blogs">Blogs</a></li>
+                <li><a href="./contactus">Contact Us</a></li>
+                <li><a href="./gallery">Gallery</a></li>
+            </ul>
+
+            <div class="book-btn-mobile">
+                <a href="./bookingAppoinment">
+                    <button type="submit">Booking Appoinment</button>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <!------CAROUSEL SECTION------>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"
+        data-bs-pause="false">
+        
+        <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./images/carousel1.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Our Hospital</h2>
+            <p>We provide expert healthcare with compassion and care.</p>
+        </div> -->
+    </div>
+
+    <div class="carousel-item">
+        <img src="./images/carousel02.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Modern Facilities</h2>
+            <p>Equipped with state-of-the-art medical technology for accurate diagnosis.</p>
+        </div> -->
+    </div>
+
+    <div class="carousel-item">
+        <img src="./images/carousel03.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Experienced Doctors</h2>
+            <p>Our team consists of specialists dedicated to your well-being.</p>
+        </div> -->
+    </div>
+
+    <div class="carousel-item">
+        <img src="./images/carousel04.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Experienced Doctors</h2>
+            <p>Our team consists of specialists dedicated to your well-being.</p>
+        </div> -->
+    </div>
+
+   <div class="carousel-item">
+        <img src="./images/carousel06.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Experienced Doctors</h2>
+            <p>Our team consists of specialists dedicated to your well-being.</p>
+        </div> -->
+    </div>
+
+    <div class="carousel-item">
+        <img src="./images/carousel07.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Experienced Doctors</h2>
+            <p>Our team consists of specialists dedicated to your well-being.</p>
+        </div> -->
+    </div>
+
+    <div class="carousel-item">
+        <img src="./images/carousel08.png" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+            <h2>Experienced Doctors</h2>
+            <p>Our team consists of specialists dedicated to your well-being.</p>
+        </div> -->
+    </div>
+</div>
+
+        <!------DETAILS OF HOSPITAL SECTION------>
+        <div class="details_container">
+            <div class="detailsbox_container">
+                <i class="fa-solid fa-user-doctor"></i>
+                <p>3 Doctors</p>
+            </div>
+            <div class="detailsbox_container">
+                <i class="fa-solid fa-bed"></i>
+                <p>150+ Beds</p>
+            </div>
+            <div class="detailsbox_container">
+                <i class="fa-solid fa-user-check"></i>
+                <p>1000+ Patients Treated</p>
+            </div>
+            <div class="detailsbox_container">
+                <i class="fa-solid fa-truck-medical"></i>
+                <p>Emergency Availabl 24/7</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="hospital-section" id="hospitalSection">
+        <div class="hospital-container">
+            <!-- Image with background -->
+            <div class="hospital-image-container">
+                <div class="hospital-image-bg"></div>
+                <img src="./images/hospitalimage.jpeg" alt="Hospital Team" class="hospital-image" />
+            </div>
+
+            <!-- Text content -->
+            <div class="hospital-content">
+                <h6>Shri Swaraa Multi Speciality Hospital</h6>
+                <p>At Shri Swaraa Multi Speciality Hospital, we are committed to delivering world-class healthcare to
+                    the people of Anantapur and beyond...</p>
+
+                <div class="features">
+                    <div class="feature">
+                        <h4>Multi-Specialty Care</h4>
+                        <p>Comprehensive healthcare under one roof, with specialties including Cardiology, Neurology...
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <h4>Expert Medical Team</h4>
+                        <p>Highly qualified and experienced doctors, surgeons, and healthcare professionals.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Advanced Facilities</h4>
+                        <p>Equipped with modern diagnostic equipment, ICU, emergency care and more.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Patient-Centric Approach</h4>
+                        <p>Personalized treatment plans and compassionate care.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Affordable Healthcare</h4>
+                        <p>World-class treatment at affordable prices, ensuring accessibility for all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------CENTER OF EXCELLENCE SECTION------>
+
+    <section class="centerofexcellence_section">
+        <h2 class="coex_title">Center of Excellence</h2>
+        <p class="coex_para">At Shri Swaraa MultiSpeciality Hospital, our Centers of Excellence represent the highest
+            standards in
+            specialized healthcare. Each center is led by renowned medical professionals and supported by
+            state-of-the-art technology, dedicated teams, and evidence-based protocols. We are committed to
+            delivering comprehensive, compassionate, and cutting-edge care in every specialty—ensuring the best
+            outcomes for our patients.</p>
+        <div class="coex_grid">
+            <div class="coex_card">
+                <img src="./images/cardicon.png" alt="Cardiology">
+                <h4>Cardiology</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/gynocoicon.png" alt="Gynecology">
+                <h4>Gynecology</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/generalmediicon.png" alt="General Medicine">
+                <h4>General Medicine</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/generalsurgicon.png" alt="General Surgery">
+                <h4>General Surgery</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/diabeticon.png" alt="Diabetology">
+                <h4>Diabetology</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/neurolo.png" alt="Neurology">
+                <h4>Neurology</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/plasticsurgicon.png" alt="Plastic Surgery">
+                <h4>Plastic Surgery</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/pulmoicon.png" alt="Pulmonology">
+                <h4>Pulmonology</h4>
+            </div>
+
+            <div class="coex_card">
+                <img src="./images/gastroicon.png" alt="Gastroenterology">
+                <h4>Gastroenterology</h4>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------OUR DOCTORS SECTION------>
+
+    <div class="expertsdoctors_container">
+        <div class="expertsdoctors_content">
+            <h6>Experts Specialists</h6>
+            <p>Meet our team of highly qualified and experienced doctors at Shri Swaraa Multi Speciality Hospital.
+                Dedicated to your health, our specialists provide compassionate care across multiple medical fields.</p>
+        </div>
+
+        <div class="expertsdoctors_innerContainer">
+            <div class="doctors_img">
+                <img src="./images/rakeshsir01.jpeg" alt="">
+                <div class="doctors_content">
+                    <h6>Cardiology</h6>
+                    <h5>Dr. V. Rakesh</h5>
+                    <p>MBBS, MD (General Medicine) DM (Cardiology), Consultant Interventional Cardiologist</p>
+                    <!-- <a href=""><button>Know More</button></a> -->
+                </div>
+            </div>
+
+            <div class="doctors_img">
+                <img src="./images/naiksir.jpg" alt="">
+                <div class="doctors_content">
+                    <h6>General Surgeon</h6>
+                    <h5>Dr. M. Devalu Naik</h5>
+                    <p>MBBS, MS, DTDC Consultant Senior most Surgeon and Chest Physician</p>
+                    <!-- <a href=""><button>Know more</button></a> -->
+                </div>
+            </div>
+
+            <div class="doctors_img">
+                <img src="./images/doctor.jpg" alt="">
+                <div class="doctors_content">
+                    <h6>Gynecologist</h6>
+                    <h5>Dr. M. Swetha</h5>
+                    <p>MBBS(KMC), M.S (OBG) Consultant Obstetrician and Gynecologist</p>
+                    <!-- <a href=""><button>Know more</button></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------WHY CHOOSE US------>
+
+    <section class="whychoose_container">
+        <div class="whychoose_title">
+            <h2>Why Choose Shri Swaraa MultiSpeciality Hospital?</h2>
+            <p>Delivering trusted healthcare with compassion, technology, and expertise.</p>
+        </div>
+
+        <div class="whychoose_points">
+            <div class="whychoose_card">
+                <h4>Expert Doctors</h4>
+                <p>Our team consists of highly qualified and experienced specialists across all departments, ensuring
+                    top-tier care.</p>
+            </div>
+
+            <div class="whychoose_card">
+                <h4>Advanced Technology</h4>
+                <p>We use cutting-edge diagnostic and treatment equipment for accurate, safe, and effective outcomes.
+                </p>
+            </div>
+
+            <div class="whychoose_card">
+                <h4>24/7 Emergency Services</h4>
+                <p>Our emergency unit is available round the clock to handle critical conditions with speed and
+                    precision.</p>
+            </div>
+
+            <div class="whychoose_card">
+                <h4>Patient-Centric Approach</h4>
+                <p>We prioritize personalized care and build strong doctor-patient relationships with empathy and
+                    transparency.</p>
+            </div>
+
+            <div class="whychoose_card">
+                <h4>Hygienic Environment</h4>
+                <p>We maintain international standards in cleanliness and safety to provide a stress-free healing
+                    experience.</p>
+            </div>
+
+            <div class="whychoose_card">
+                <h4>Affordable Quality Care</h4>
+                <p>High-quality medical services made accessible and affordable for every individual and family.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------TESTINOMIALS SCETION------>
+
+
+    <section class="testimonial-section">
+        <div class="testimonial-title">
+            <h2>Testimonials</h2>
+            <p>Here's what our happy patients say about us.</p>
+        </div>
+
+        <div class="testimonial-wrapper">
+            <div class="arrow arrow-left" onclick="moveLeft()">&#10094;</div>
+
+            <div class="testimonial-cards-container">
+                <div class="testimonial-cards" id="cardSlider">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 1" />
+                            <div class="info">
+                                <h4>K. Kishore</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>I experienced sudden chest pain one day and rushed to Dr Rakesh sir, Dr Rakesh attended me immediately and within the golden hour I was taken to cathlag and a stent placement was done.
+                        </br>
+                        That quick suspicion and accurate diagnosis saved my life. Dr. Rakesh is highly experienced in diagnosing cardiac issues and truly cares for his patients like family.
+                        </br>
+                        Shri Swaraa Hospital is well equipped, and the entire cardiac team acted fast and professionally.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 2" />
+                            <div class="info">
+                                <h4>Venkataramudu</h4>
+                                <div class="rating">⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>I visited Dr. Rakesh sir in Shri Swaraa Hospital one early morning with constant jaw pain. He listened to my problem carefully and performed an ECG and heart scan.
+                        </br>
+                        Though both reports were normal, with his clinical expertise, he didn't ignore my jaw pain and advised me to go for an angiogram, he found a serious blockage in my heart. A sent was placed immediately without any delay. Neglecting my jaw pain, thinking it as a small symptom would have had serious implications to my cardiac health.
+                        </br>
+                        I truly thank Dr. Rakesh sir and the entire team at Shri Swaraa Hospital for their quick action, care and for giving me a second chance at life.
+                        </br>
+                        Dr. Rakesh sir is not only high skilled in heart-related problems, but also very kind and attentive. The staff at Shri Swaraa Hospital were supportive, professional, and the facilities were well-equipped for emergency care.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <!-- <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 3" />
+                            <div class="info">
+                                <h4>Sneha</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>Clean environment and caring nurses. Highly recommend this hospital.</p>
+                    </div> -->
+
+                    <!-- Card 4 -->
+                    <!-- <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 4" />
+                            <div class="info">
+                                <h4>Rajesh</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>Great experience. Friendly doctors and minimal wait time.</p>
+                    </div> -->
+
+                    <!-- Card 5 -->
+                    <!-- <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 5" />
+                            <div class="info">
+                                <h4>Aarti</h4>
+                                <div class="rating">⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>Very cooperative staff. Would definitely visit again if needed.</p>
+                    </div> -->
+
+                    <!-- Card 6 -->
+                    <!-- <div class="testimonial-card">
+                        <div class="card-top">
+                            <img src="./images/testinomialicon.png" alt="Person 6" />
+                            <div class="info">
+                                <h4>Vikram</h4>
+                                <div class="rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p>Highly organized and professional. Thank you for the support!</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="arrow arrow-right" onclick="moveRight()">&#10095;</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------FOOTER SECTION------>
+
+    <footer>
+        <div class="footer_container">
+            <div class="container_one">
+                <div class="footer_logo">
+                    <img src="./images/hospitallogo.png" alt="">
+                    <p>Shree Swaraa MultiSpeciality Hospital Maruti Nagar 3rd Cross, Maruthi Nagar-515002</p>
+                </div>
+
+                <div class="social_icons">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/ShriSwaraaHospital"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.instagram.com/shriswaraahospital/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://x.com/ShriSwaraa"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.youtube.com/@ShriSwaraaHospital"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_two">
+                <p>Quick Links</p>
+
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="aboutus">About Us</a></li>
+                    <li><a href="doctors">Doctors</a></li>
+                    <li><a href="blogs">Blogs</a></li>
+                    <li><a href="contactus">Contact Us</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="privacypolicy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+
+            <div class="container_three">
+                <p>Departments</p>
+
+                <ul>
+                    <li><a href="cardiology">Cardiology</a></li>
+                    <li><a href="gynecology">Gynecology</a></li>
+                    <li><a href="generalsurgery">General Surgery</a></li>
+                    <li><a href="generalmedicine">General Medicine</a></li>
+                    <li><a href="diabetology">Diabetology</a></li>
+                    <li><a href="neurology">Neurology</a></li>
+                    <li><a href="plasticsurgery">Plastic Surgery</a></li>
+                    <li><a href="pulmonology">Pulmonology</a></li>
+                    <li><a href="gastroenterology">Gastroenterology</a></li>
+                </ul>
+            </div>
+
+
+            <div class="container_four">
+                <p>Contact Details</p>
+
+                <div class="contact_icon">
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@shriswaraamultispecialityhospital.com</p>
+                    </div>
+
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 8801503333</p>
+                    </div>
+
+                    <div class="cont_icon">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>8 AM - 5 PM , Monday - Saturday</p>
+                    </div>
+                </div>
+
+                <div class="make_appoinment">
+                    <!-- <p>Call Us</p> -->
+                    <hr>
+                    <p class="make_appoin_content">At Shri Swaraa Multi Speciality Hospital, your health is our
+                        priority. Reach out to us for appointments, medical inquiries, or any assistance you may need.
+                    </p>
+                    <div class="make_appoin_icon">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 9948167897</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer_bottomContainer">
+            <p>shriswaraamultispecialityhospital.com</p>
+            <p>Copyright © 2025 All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
