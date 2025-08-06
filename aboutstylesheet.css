@@ -10,6 +10,12 @@ body {
     padding: 120px 0 0 0;
 }
 
+@media (max-width:768px) {
+    body {
+        padding: 0;
+    }
+}
+
 
 /**------ABOUT US BANNER------**/
 .banner-image {
