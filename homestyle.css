@@ -10,6 +10,14 @@ body {
   padding: 120px 0 0 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 /**------NAVBAR TOP-CONTAINER START HERE------**/
 
@@ -139,13 +147,16 @@ body {
 
     .logo-left-box {
         /* border: 1px solid black; */
-        width: 80%;
-        margin-left: 0;
+        width: 60%;
+        height: 60px;
+        margin-left: 18px;
         margin-right: 55px;
     }
 
     .logo-left-box>img {
+        /* border: 1px solid black; */
         width: 100%;
+        height: 60px;
     }
 
     .book-btn-mobile > a {
@@ -219,6 +230,14 @@ body {
   .departments-dropdown i {
   margin-left: 4px;
   font-size: 16px;
+  display: none;
+}
+
+.dropdown-toggle {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 0px;
 }
 
 @media (min-width:1025px) {
@@ -268,6 +287,7 @@ body {
 .departments-dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 /* 3-column layout for dropdown */
 .departments-dropdown .dropdown-content ul {
@@ -319,11 +339,19 @@ body {
     position: static;
     background: none;
     box-shadow: none;
-    padding-left: 10px;
-    min-width: 100%;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     /* background: linear-gradient(to right, rgb(78, 7, 20, 1), rgb(100, 18, 32, 1)); */
     background: rgb(255,0,84);
   }
+
+    .departments-dropdown i {
+  margin-left: 4px;
+  font-size: 16px;
+  display: none;
+}
 
   .departments-dropdown .dropdown-content ul {
     display: flex;
@@ -952,7 +980,7 @@ color: rgba(255, 0, 84,0.8);
 
 .doctors_content {
   /* border: 1px solid black; */
-   background: linear-gradient(to bottom, rgba(255,0,84,0.9));
+   background: rgba(255,0,84,0.9);
    color: white;
    text-align: center;
    padding: 12px;
@@ -1028,6 +1056,7 @@ color: rgba(255, 0, 84,0.8);
 
   .doctors_content {
     height: 150px;
+    background: linear-gradient(to bottom, rgba(255,0,84,0.9));
   }
 }
 
@@ -1277,6 +1306,7 @@ color: rgba(255, 0, 84,0.8);
     transition: transform 0.5s ease-in-out;
   }
     .testimonial-card {
+      /* border: 1px solid black; */
     background: white;
     padding: 20px;
     border-radius: 12px;
@@ -1344,6 +1374,10 @@ color: rgba(255, 0, 84,0.8);
 
       .arrow-right {
         right: -20px;
+      }
+
+      .testimonial-card {
+        height: fit-content;
       }
     }
 
@@ -1605,6 +1639,8 @@ footer {
 }
 .footer_bottomContainer > p{
   line-height: 1;
+   font-family: "Nunito", sans-serif;
+
 }
 
 
@@ -1617,35 +1653,103 @@ footer {
     padding-bottom: 0px;
   }
 
+  .footer_logo > img {
+    height: 60px;
+    width: 200px;
+    margin-left: 30px;
+  }
+
   .footer_logo {
     padding: 10% 0% 0% 0%;
   }
 
   .footer_logo > p {
     margin: 0 45px 15px;
+    font-size: 15px;
   }
 
   .social_icons {
     margin: 0 40px;
   }
 
+  .social_icons > .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social_icons > .icon > a {
+    font-size: 18px;
+  }
+
   .container_two {
     width: 100%;
-    padding: 5% 2% 0;
+    padding: 8% 6% 0;
+  }
+
+  .container_two > p {
+    font-size: 18px;
+  }
+
+  .container_two > ul > li > a {
+    font-size: 15px;
   }
 
   .container_three {
     width: 100%;
-    padding: 0% 2% 0;
+    padding: 2% 6% 0;
+  }
+
+  .container_three > p {
+    font-size: 18px;
+  }
+
+  .container_three > ul > li > a {
+    font-size: 15px;
   }
 
   .container_four {
     width: 100%;
-    padding: 0% 5%;
+    padding: 2% 10% 0;
+  }
+
+  .container_four > p {
+    font-size: 18px;
+  }
+
+  .cont_icon {
+    gap: 5px;
+  }
+
+  .cont_icon > i {
+    font-size: 13px;
+  }
+
+  .cont_icon > p {
+    font-size: 15px;
+  }
+
+  .make_appoin_content {
+    font-size: 15px!important;
+  }
+
+  .make_appoin_icon > i {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    padding:  6px 0;
+  }
+
+  .make_appoin_icon > p {
+    font-size: 15px;
+    line-height: 2;
   }
 
   .footer_bottomContainer {
     flex-direction: column;
     gap: 5px;
+  }
+
+  .footer_bottomContainer > p {
+    font-size: 15px;
   }
 }

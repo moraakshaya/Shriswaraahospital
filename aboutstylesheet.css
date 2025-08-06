@@ -28,6 +28,10 @@ body {
     padding: 0 15px;
 }
 
+.banner-text > h1 {
+     font-family: "Crimson Text", serif;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
@@ -44,6 +48,7 @@ body {
     font-weight: bold;
     font-size: 17px;
 }
+
 
 
 

@@ -323,8 +323,14 @@ color: rgba(255, 0, 84,0.8);
     text-align: center;
   }
 
+  .newsletter_social {
+    /* border: 1px solid white; */
+  }
+
   .newsletter_formBox {
     flex: 1 1 200px;
+    /* border: 1px solid white; */
+    margin: 0 5% 0 15%;
   }
 
   .newsletter_formBox form {

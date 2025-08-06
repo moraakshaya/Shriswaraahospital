@@ -13,12 +13,13 @@
     });
 
     // Dropdown toggle only on mobile
-    deptItem.addEventListener('click', function (e) {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        this.classList.toggle('open');
-      }
-    });
+    const dropdownToggle = deptItem.querySelector('.dropdown-toggle'); // e.g., your top-level "Departments" link
+dropdownToggle.addEventListener('click', function (e) {
+  if (window.innerWidth <= 768) {
+    e.preventDefault();
+    deptItem.classList.toggle('open');
+  }
+});
   });
 
 
