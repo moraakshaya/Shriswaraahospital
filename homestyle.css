@@ -14,7 +14,7 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
 }
 
@@ -131,6 +131,25 @@ html, body {
 }
 
 
+@media (max-width:767px) {
+   .logo-left-box {
+        /* border: 1px solid black; */
+        width: 60%;
+        height: 10%;
+        margin-left: 18px;
+        margin-right: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-left-box>img {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width:768px) {
     body {
       padding: 50px 0 0 0;
@@ -143,20 +162,6 @@ html, body {
     .book-btn,
     .call_container {
         display: none;
-    }
-
-    .logo-left-box {
-        /* border: 1px solid black; */
-        width: 60%;
-        height: 60px;
-        margin-left: 18px;
-        margin-right: 55px;
-    }
-
-    .logo-left-box>img {
-        /* border: 1px solid black; */
-        width: 100%;
-        height: 60px;
     }
 
     .book-btn-mobile > a {
@@ -484,7 +489,7 @@ html, body {
 .details_container {
   position: absolute;
   top: 88%;
-  left: 20%;
+  left: 18%;
   height: 130px;
   width: 65%;
   display: flex;
@@ -502,19 +507,21 @@ html, body {
   align-items: center;
   color: white;
   gap: 13px;
+  border-radius: 15px;
   /* border-right: 1px solid #ccc; */
-  background:  rgba(255, 0, 84);
+  /* background:  rgba(255, 0, 84); */
+  background: rgba(111,35,117);
 }
 
 .detailsbox_container>i {
-  font-size: 45px;
+  font-size: 40px;
   color: #f5f5f5;
 }
 
 .detailsbox_container>p {
-  font-size: 18px;
-  font-weight: 700;
-  
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
 }
 
 
@@ -542,7 +549,6 @@ html, body {
   gap: 13px;
   color: white;
   /* border-right: 1px solid #ccc; */
-  background: rgb(255,0,84);
 }
 
 .detailsbox_container>i {
@@ -550,7 +556,7 @@ html, body {
 }
 
 .detailsbox_container>p {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-align: center;
 }
@@ -584,7 +590,7 @@ html, body {
     color: white;
     /* border-right: 1px solid #ccc;
     background: linear-gradient(to bottom, #660708, #4e0714); */
-    background: rgb(255,0,84);
+    /* background: rgb(255,0,84); */
   }
 
   .detailsbox_container>i {
@@ -592,7 +598,7 @@ html, body {
   }
 
   .detailsbox_container>p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
   }
@@ -667,11 +673,12 @@ html, body {
 }
 
 .hospital-content h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
-  color: rgba(255, 0, 84,0.8);
+  /* color: rgba(255, 0, 84,0.8); */
+  color: #000;
   margin-bottom: 15px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   font-family: "Crimson Text", serif;
 }
 
@@ -807,10 +814,11 @@ html, body {
 
 .coex_title {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  color: rgba(255, 0, 84,0.8);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  /* color: rgba(255, 0, 84,0.8); */
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   font-family: "Crimson Text", serif;
 }
 
@@ -848,7 +856,8 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255,0,84,0.7));
+  /* background: linear-gradient(to bottom, rgba(255,0,84,0.7)); */
+  background: rgba(111,35,117,0.9);
   z-index: 0;
   transition: top 0.4s ease-in-out;
 }
@@ -869,7 +878,8 @@ html, body {
 .coex_card h4 {
   font-size: 18px;
   font-weight: 600;
-  color: rgb(255,0,84,0.7);
+  /* color: rgb(255,0,84,0.7); */
+  color: rgba(111,35,117);
   z-index: 1;
   position: relative;
   font-family: "Crimson Text", serif;
@@ -926,13 +936,13 @@ html, body {
 }
 
 .expertsdoctors_content > h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
   text-align: center;
   font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
-
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+  color: #000;
 }
 
 .expertsdoctors_content > p {
@@ -1099,11 +1109,11 @@ color: rgba(255, 0, 84,0.8);
 
 .whychoose_title h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
-
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+color: #000;
 }
 
 .whychoose_title p {
@@ -1140,7 +1150,8 @@ color: rgba(255, 0, 84,0.8);
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 0, 84,0.8);
+  /* background: rgba(255, 0, 84,0.8); */
+  background: rgba(111,35,117);
   z-index: -1;
   transition: bottom 0.4s ease;
   border-radius: 12px;
@@ -1160,7 +1171,8 @@ color: rgba(255, 0, 84,0.8);
   font-weight: 600;
   margin-bottom: 10px;
   /* color: #4e0714; */
-  color: rgb(255,0,84, 0.7);
+  /* color: rgb(255,0,84, 0.7); */
+  color: rgba(111,35,117);
   position: relative;
   z-index: 2;
    font-family: "Crimson Text", serif;
@@ -1243,12 +1255,12 @@ color: rgba(255, 0, 84,0.8);
 
     .testimonial-title h2 {
       font-size: 32px;
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 10px;
        font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
-
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+color: #000;
     }
 
     .testimonial-title p {
@@ -1404,8 +1416,9 @@ color: rgba(255, 0, 84,0.8);
 footer {
   /* background: linear-gradient(to bottom, rgb(255,0,84,0.7)); */
   margin-bottom: 0;
-  background: rgb(68, 68, 68, 0.7);
-  box-shadow: 1px 1px 12px #ff0054 inset;
+  /* background: rgb(68, 68, 68, 0.7); */
+  background: rgba(111,35,117,0.9);
+  /* box-shadow: 1px 1px 2px #ff0054 inset; */
 }
 
 .footer_container {
@@ -1499,7 +1512,7 @@ footer {
 }
 
 .container_two > ul > li > a:hover {
-  color: #ccc;
+  color: #212020;
 }
 
 
@@ -1535,7 +1548,7 @@ footer {
 }
 
 .container_three > ul > li > a:hover {
-  color: #ccc;
+  color: #212020;
 }
 
 
@@ -1573,10 +1586,10 @@ footer {
    font-family: "Nunito", sans-serif;
 }
 .cont_icon > i:hover {
-  color: #ccc;
+  color: #212020;
 }
 .cont_icon > p:hover {
-  color: #ccc;
+  color: #212020;
 }
 
 .make_appoinment {

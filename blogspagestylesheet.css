@@ -83,12 +83,12 @@ body {
 
 .blog_header h1 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
    font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
-
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+  color: #000;
 }
 
 .blog_meta {
@@ -116,7 +116,9 @@ color: rgba(255, 0, 84,0.8);
 .blog_content h3 {
   font-size: 24px;
   margin: 30px 0 10px;
-  color: rgba(255, 0, 84,0.8);
+  /* color: rgba(255, 0, 84,0.8); */
+  color: #000;
+  font-weight: 600;
   font-family: "Crimson Text", serif;
 }
 
@@ -217,6 +219,7 @@ color: rgba(255, 0, 84,0.8);
   font-size: 28px;
   margin-bottom: 10px;
   font-family: "Crimson Text", serif;
+  font-weight: 600;
 }
 
 .newsletter_formBox p {
@@ -240,7 +243,8 @@ color: rgba(255, 0, 84,0.8);
 
 .subscribe_btn {
   background: #fff;
-  color: rgba(255, 0, 84,0.8);
+  /* color: rgba(255, 0, 84,0.8); */
+  color: rgba(111,35,117);
   border: none;
   padding: 12px;
   border-radius: 50%;
@@ -249,8 +253,9 @@ color: rgba(255, 0, 84,0.8);
 }
 
 .subscribe_btn:hover {
-  background: rgba(255, 0, 84,0.8);
+  /* background: rgba(255, 0, 84,0.8); */
   color: #fff;
+  background: rgba(111,35,117);
 }
 
 /* ======= Right: Social Icons ======= */
@@ -266,6 +271,8 @@ color: rgba(255, 0, 84,0.8);
   font-size: 22px;
   margin-bottom: 15px;
   font-family: "Crimson Text", serif;
+  /* color: rgba(111,35,117); */
+  font-weight: 600;
 }
 
 .social_share {

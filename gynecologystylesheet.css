@@ -65,10 +65,11 @@ body {
 
 .gynecology-title {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+color: #000;
 }
 
 .gynecology-description {
@@ -116,10 +117,11 @@ color: rgba(255, 0, 84,0.8);
 
 .why-title {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+color: #000;
 }
 
 .why-paragraph {
@@ -168,10 +170,11 @@ color: rgba(255, 0, 84,0.8);
 
 .section-title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+/* color: rgba(255, 0, 84,0.8); */
+color: #000;
 }
 
 .doctor-img {
@@ -283,44 +286,47 @@ color: rgba(255, 0, 84,0.8);
 
 
 .service-card {
-    background: white;
     /* padding: 20px; */
     border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     /* text-align: center; */
     height: 100%;
-    border: 1px solid #4e0714;
+    /* border: 1px solid #4e0714; */
 }
 
 
   .service-card {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
+    background: rgba(111,35,117,0.8);
     border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 40px 0 0 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     text-align: left;
     height: 100%; /* Optional for height consistency */
   }
 
   .our-service-title {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    /* color: rgba(255, 0, 84,0.8); */
+    color: #000;
 }
 
 
 .service-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #000;
+        color: whitesmoke;
+
     font-family: "Nunito", sans-serif;
 }
 
 .service-card p {
     font-size: 16px;
-    color: #333;
+    /* color: #333; */
+    color: #000;
     line-height: 1.6;
     font-family: "Nunito", sans-serif;
 }
@@ -531,8 +537,9 @@ color: rgba(255, 0, 84,0.8);
       font-weight: bold;
       margin-bottom: 30px;
       font-family: "Crimson Text", serif;
-text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-color: rgba(255, 0, 84,0.8);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      /* color: rgba(255, 0, 84,0.8); */
+      color: #000;
       
     }
 
@@ -564,8 +571,11 @@ color: rgba(255, 0, 84,0.8);
       overflow: hidden;
       transition: max-height 0.4s ease, padding 0.3s ease;
       background: #fff;
+      background: rgba(111,35,117,0.7);
       font-size: 16px;
-      color: #444;
+      /* color: #444; */
+      color: whitesmoke;
+
       font-family: "Nunito", sans-serif;
     }
 
@@ -577,7 +587,8 @@ color: rgba(255, 0, 84,0.8);
     .faq-icon {
       font-size: 24px;
       transition: transform 0.3s ease;
-      color: rgba(255, 0, 84,0.8);
+      /* color: rgba(255, 0, 84,0.8); */
+      color: rgba(111,35,117);
       font-weight: bold;
     }
 
