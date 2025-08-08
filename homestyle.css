@@ -407,16 +407,23 @@ html, body {
 
 /**------CAROUSEL SECTION------**/
 
+
 .carousel {
   margin-top: 0 !important;
   width: 100%;
   position: relative;
 }
 
+
+
 .carousel-inner img {
   height: 100vh;
   object-fit: cover;
   width: 100%;
+}
+
+.carousel-item > img {
+   filter: brightness(75%);
 }
 
 
@@ -434,6 +441,77 @@ html, body {
   }
 }
 
+
+.carousel-caption{
+    text-align: left;
+    position: absolute;
+    top: 38%;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(20%);
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.carousel-caption h2.carousel-heading,
+.carousel-caption p.carousel-text {
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Default sizes for desktop */
+.carousel-caption h2.carousel-heading {
+    font-family: "Crimson Text", serif;
+    font-size: 3rem;
+    font-weight: 900;
+    /* color: #6f2357; */
+    color: rgba(255,0,84);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p.carousel-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 20%;
+    width: 70%;
+    bottom: auto;
+    left: 30%;
+    transform: translateX(0%);
+  } 
+    .carousel-caption h2.carousel-heading {
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+
+    .carousel-caption p.carousel-text {
+        font-size: 0.9rem;
+        /* padding: 0 15px; */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .carousel-caption h2.carousel-heading {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption p.carousel-text {
+        font-size: 0.85rem;
+        /* padding: 0 10px; */
+    }
+}
 
 
 /* 
