@@ -1318,11 +1318,10 @@ color: #000;
   }
     .testimonial-card {
       /* border: 1px solid black; */
-    background: white;
+    background: rgba(111,35,117,0.9);
     padding: 20px;
     border-radius: 12px;
-    /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); */
-    box-shadow: 1px 1px 8px rgb(255,0,84) inset;
+
     flex-shrink: 0;
     width: calc(50% - 10px); /* For 2 cards with 20px gap */
   }
